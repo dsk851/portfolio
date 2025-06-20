@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'JetBrains Mono', monospace;
+    }
+  </style>
+</head>
+
+<body class="bg-slate-50 text-slate-800">
+  <!-- Navigation -->
+  <nav class="bg-slate-900 shadow-lg fixed w-full top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <div class="text-xl font-bold text-white">
+          QUINDAH Espoir Deserema
+        </div>
+        <ul class="hidden md:flex space-x-8">
+          <li><a href="#home" class="text-slate-300 hover:text-cyan-400 transition-colors duration-300">Accueil</a></li>
+          <li><a href="#skills"
+              class="text-slate-300 hover:text-cyan-400 transition-colors duration-300">Compétences</a></li>
+          <li><a href="#projects" class="text-slate-300 hover:text-cyan-400 transition-colors duration-300">Projets</a>
+          </li>
+          <li><a href="#contact" class="text-slate-300 hover:text-cyan-400 transition-colors duration-300">Contact</a>
+          </li>
+        </ul>
+        <!-- Mobile menu button -->
+        <div class="md:hidden">
+          <button id="mobile-menu-button" class="text-slate-300 hover:text-white">
+            <i class="fas fa-bars text-xl"></i>
+          </button>
+        </div>
+      </div>
+      <!-- Mobile menu -->
+      <div id="mobile-menu" class="md:hidden hidden bg-slate-800 border-t border-slate-700">
+        <div class="px-2 pt-2 pb-3 space-y-1">
+          <a href="#home"
+            class="block px-3 py-2 text-slate-300 hover:text-cyan-400 transition-colors duration-300">Accueil</a>
+          <a href="#skills"
+            class="block px-3 py-2 text-slate-300 hover:text-cyan-400 transition-colors duration-300">Compétences</a>
+          <a href="#projects"
+            class="block px-3 py-2 text-slate-300 hover:text-cyan-400 transition-colors duration-300">Projets</a>
+          <a href="#contact"
+            class="block px-3 py-2 text-slate-300 hover:text-cyan-400 transition-colors duration-300">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="pt-16 min-h-screen flex items-center bg-gradient-to-br from-slate-900 to-slate-700">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <div class="text-center">
+        <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">
+          Développeur Full Stack <span class="text-cyan-400">Créatif</span>
+        </h1>
+        <p class="text-xl text-slate-300 mb-8 max-w-3xl mx-auto">
+          Étudiant en 4e année d'informatique, passionné par la création d'applications web modernes et performantes.
+        </p>
+        <div class="flex justify-center space-x-4 ">
+          <a href="#projects"
+            class="inline-block bg-cyan-500 hover:bg-cyan-600 text-white font-semibold px-8 py-3 rounded-lg transition-all duration-700 shadow-lg hover:shadow-xl opacity-0 translate-x-[-100px]" id="mon-element">
+            Voir mes projets
+          </a>
+          <a href="#contact"
+            class="inline-block border-2 border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-white font-semibold px-8 py-3 rounded-lg transition-colors duration-300">
+            Me contacter
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-bold text-center text-slate-800 mb-16">
+        Mes Compétences
+      </h2>
+
+      <!-- Front-End -->
+      <div class="mb-16">
+        <h3 class="text-2xl font-semibold text-slate-700 mb-8 border-l-4 border-cyan-500 pl-4">
+          Front-End
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div
+            class="bg-slate-50 p-6 rounded-lg border border-slate-200 hover:shadow-lg transition-shadow duration-300">
+            <div class="flex items-center mb-4">
+              <i class="fab fa-html5 text-3xl text-orange-500 mr-4"></i>
+              <div>
+                <h4 class="text-lg font-semibold text-slate-800">HTML5</h4>
+                <p class="text-slate-600 text-sm">Structure sémantique et accessibilité</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-slate-50 p-6 rounded-lg border border-slate-200 hover:shadow-lg transition-shadow duration-300">
+            <div class="flex items-center mb-4">
+              <i class="fab fa-css3-alt text-3xl text-blue-500 mr-4"></i>
+              <div>
+                <h4 class="text-lg font-semibold text-slate-800">CSS3</h4>
+                <p class="text-slate-600 text-sm">Styles avancés et animations</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-slate-50 p-6 rounded-lg border border-slate-200 hover:shadow-lg transition-shadow duration-300">
+            <div class="flex items-center mb-4">
+              <i class="fab fa-js text-3xl text-yellow-500 mr-4"></i>
+              <div>
+                <h4 class="text-lg font-semibold text-slate-800">JavaScript</h4>
+                <p class="text-slate-600 text-sm">ES6+, Programmation fonctionnelle</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-slate-50 p-6 rounded-lg border border-slate-200 hover:shadow-lg transition-shadow duration-300">
+            <div class="flex items-center mb-4">
+              <i class="fab fa-react text-3xl text-blue-400 mr-4"></i>
+              <div>
+                <h4 class="text-lg font-semibold text-slate-800">React</h4>
+                <p class="text-slate-600 text-sm">Hooks, Context API, Redux</p>
+              </div>
+            </div>
+          </div>
+          
+          <div
+            class="bg-slate-50 p-6 rounded-lg border border-slate-200 hover:shadow-lg transition-shadow duration-300">
+            <div class="flex items-center mb-4">
+              <i class="fas fa-bolt text-3xl text-cyan-500 mr-4"></i>
+              <div>
+                <h4 class="text-lg font-semibold text-slate-800">Tailwind CSS</h4>
+                <p class="text-slate-600 text-sm">Utility-first CSS framework</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Back-End -->
+      <div class="mb-16">
+        <h3 class="text-2xl font-semibold text-slate-700 mb-8 border-l-4 border-cyan-500 pl-4">
+          Back-End
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div
+            class="bg-slate-50 p-6 rounded-lg border border-slate-200 hover:shadow-lg transition-shadow duration-300">
+            <div class="flex items-center mb-4">
+              <i class="fab fa-node-js text-3xl text-green-600 mr-4"></i>
+              <div>
+                <h4 class="text-lg font-semibold text-slate-800">Node.js</h4>
+                <p class="text-slate-600 text-sm">Express, NestJS</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-slate-50 p-6 rounded-lg border border-slate-200 hover:shadow-lg transition-shadow duration-300">
+            <div class="flex items-center mb-4">
+              <i class="fab fa-laravel text-3xl text-red-500 mr-4"></i>
+              <div>
+                <h4 class="text-lg font-semibold text-slate-800">Laravel</h4>
+                <p class="text-slate-600 text-sm">Eloquent, Blade</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-slate-50 p-6 rounded-lg border border-slate-200 hover:shadow-lg transition-shadow duration-300">
+            <div class="flex items-center mb-4">
+              <i class="fab fa-python text-3xl text-blue-600 mr-4"></i>
+              <div>
+                <h4 class="text-lg font-semibold text-slate-800">Python</h4>
+                <p class="text-slate-600 text-sm">Flask</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-slate-50 p-6 rounded-lg border border-slate-200 hover:shadow-lg transition-shadow duration-300">
+            <div class="flex items-center mb-4">
+              <i class="fas fa-database text-3xl text-blue-400 mr-4"></i>
+              <div>
+                <h4 class="text-lg font-semibold text-slate-800">Bases de données</h4>
+                <p class="text-slate-600 text-sm">MySQL, PostgreSQL, MongoDB</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-slate-50 p-6 rounded-lg border border-slate-200 hover:shadow-lg transition-shadow duration-300">
+            <div class="flex items-center mb-4">
+              <i class="fas fa-server text-3xl text-purple-500 mr-4"></i>
+              <div>
+                <h4 class="text-lg font-semibold text-slate-800">API REST</h4>
+                <p class="text-slate-600 text-sm">Conception et développement</p>
+              </div>
+            </div>
+          </div>
+          <!-- <div
+            class="bg-slate-50 p-6 rounded-lg border border-slate-200 hover:shadow-lg transition-shadow duration-300">
+            <div class="flex items-center mb-4">
+              <i class="fas fa-cloud text-3xl text-blue-300 mr-4"></i>
+              <div>
+                <h4 class="text-lg font-semibold text-slate-800">GraphQL</h4>
+                <p class="text-slate-600 text-sm">Apollo, Hasura</p>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+
+      <!-- DevOps & Outils -->
+      <div class="mb-16">
+        <h3 class="text-2xl font-semibold text-slate-700 mb-8 border-l-4 border-cyan-500 pl-4">
+          DevOps & Outils
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div
+            class="bg-slate-50 p-6 rounded-lg border border-slate-200 hover:shadow-lg transition-shadow duration-300">
+            <div class="flex items-center mb-4">
+              <i class="fab fa-docker text-3xl text-blue-500 mr-4"></i>
+              <div>
+                <h4 class="text-lg font-semibold text-slate-800">Docker</h4>
+                <p class="text-slate-600 text-sm">Conteneurisation</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-slate-50 p-6 rounded-lg border border-slate-200 hover:shadow-lg transition-shadow duration-300">
+            <div class="flex items-center mb-4">
+              <i class="fab fa-git-alt text-3xl text-orange-600 mr-4"></i>
+              <div>
+                <h4 class="text-lg font-semibold text-slate-800">Git</h4>
+                <p class="text-slate-600 text-sm">Gestion de versions</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-slate-50 p-6 rounded-lg border border-slate-200 hover:shadow-lg transition-shadow duration-300">
+            <div class="flex items-center mb-4">
+              <i class="fab fa-linux text-3xl text-black mr-4"></i>
+              <div>
+                <h4 class="text-lg font-semibold text-slate-800">Linux</h4>
+                <p class="text-slate-600 text-sm">Administration système</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-slate-50 p-6 rounded-lg border border-slate-200 hover:shadow-lg transition-shadow duration-300">
+            <div class="flex items-center mb-4">
+              <i class="fas fa-terminal text-3xl text-gray-600 mr-4"></i>
+              <div>
+                <h4 class="text-lg font-semibold text-slate-800">CLI</h4>
+                <p class="text-slate-600 text-sm">Bash, Zsh</p>
+              </div>
+            </div>
+          </div>
+          <!-- <div
+            class="bg-slate-50 p-6 rounded-lg border border-slate-200 hover:shadow-lg transition-shadow duration-300">
+            <div class="flex items-center mb-4">
+              <i class="fas fa-rocket text-3xl text-purple-500 mr-4"></i>
+              <div>
+                <h4 class="text-lg font-semibold text-slate-800">CI/CD</h4>
+                <p class="text-slate-600 text-sm">GitHub Actions, Jenkins</p>
+              </div>
+            </div> -->
+          </div>
+          <!-- <div
+            class="bg-slate-50 p-6 rounded-lg border border-slate-200 hover:shadow-lg transition-shadow duration-300">
+            <div class="flex items-center mb-4">
+              <i class="fas fa-cloud text-3xl text-blue-400 mr-4"></i>
+              <div>
+                <h4 class="text-lg font-semibold text-slate-800">Cloud</h4>
+                <p class="text-slate-600 text-sm">AWS, Firebase</p>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+
+  <section id="projects" class="bg-white mb-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  
+      <!-- Titre -->
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-2xl md:text-3xl font-bold text-center text-slate-800 mb-12">
+          Mes Projets
+        </h2>
+      </div>
+  
+      <!-- Grille des projets -->
+      <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 lg:gap-12">
+  
+        <!-- Projet 1 -->
+        <div
+          class="group bg-white border border-gray-100 hover:border-gray-200 rounded-xl overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+          <img src="images/wheather_app.png" alt="Application Météo" class="w-full h-40 object-cover">
+          <div class="p-6 space-y-4">
+            <div>
+              <h3 class="text-lg font-bold text-gray-900 group-hover:text-gray-700 transition-colors">
+                Application Météo
+              </h3>
+              <p class="text-sm text-gray-600 leading-relaxed">
+                Application utilisant une API avec recherche par ville.
+              </p>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1 text-xs font-semibold text-black rounded-full bg-cyan-400">HTML</span>
+              <span class="px-3 py-1 text-xs font-semibold text-black rounded-full bg-cyan-400">CSS</span>
+              <span class="px-3 py-1 text-xs font-semibold text-black rounded-full bg-cyan-400">JavaScript</span>
+            </div>
+            <div class="flex items-center space-x-6 pt-1">
+              <a href="https://github.com/dsk851/Weather_app.git" class="text-gray-900 hover:text-gray-600 transition-colors group/link">
+                <span
+                  class="text-xs font-medium hover:bg-black hover:text-white p-1 px-2 rounded-xl transition-all">Détails</span>
+                <i class="fas fa-arrow-right ml-1 text-[10px] group-hover/link:translate-x-1 transition-transform"></i>
+              </a>
+              <a href="#" class="text-gray-500 hover:text-gray-700 transition-colors">
+                <i class="fab fa-github text-base"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Projet 2 -->
+        <div
+          class="group bg-white border border-gray-100 hover:border-gray-200 rounded-xl overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+          <img src="images/qr_code_generator.png" alt="Générateur de QR Code" class="w-full h-40 object-cover">
+          <div class="p-6 space-y-4">
+            <div>
+              <h3 class="text-lg font-bold text-gray-900 group-hover:text-gray-700 transition-colors">
+                Générateur de QR Code
+              </h3>
+              <p class="text-sm text-gray-600 leading-relaxed">
+                Outil de génération de QR code utilisant une API.
+              </p>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1 text-xs font-semibold text-black rounded-full bg-cyan-400">HTML</span>
+              <span class="px-3 py-1 text-xs font-semibold text-black rounded-full bg-cyan-400">CSS</span>
+              <span class="px-3 py-1 text-xs font-semibold text-black rounded-full bg-cyan-400">JavaScript</span>
+            </div>
+            <div class="flex items-center space-x-6 pt-1">
+              <a href="https://github.com/dsk851/qr_code_generator.git" class="text-gray-900 hover:text-gray-600 transition-colors group/link">
+                <span
+                  class="text-xs font-medium hover:bg-black hover:text-white p-1 px-2 rounded-xl transition-all">Détails</span>
+                <i class="fas fa-arrow-right ml-1 text-[10px] group-hover/link:translate-x-1 transition-transform"></i>
+              </a>
+              <a href="#" class="text-gray-500 hover:text-gray-700 transition-colors">
+                <i class="fab fa-github text-base"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Projet 3 -->
+        <div
+          class="group bg-white border border-gray-100 hover:border-gray-200 rounded-xl overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+          <img src="images/laravel_x_react.png" alt="Application Gestion Utilisateurs" class="w-full h-40 object-cover">
+          <div class="p-6 space-y-4">
+            <div>
+              <h3 class="text-lg font-bold text-gray-900 group-hover:text-gray-700 transition-colors">
+                Application de Gestion Utilisateurs
+              </h3>
+              <p class="text-sm text-gray-600 leading-relaxed">
+                Interface utilisateur avec opertations CRUD et authentification.
+              </p>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1 text-xs font-semibold text-black rounded-full bg-cyan-400">React</span>
+              <span class="px-3 py-1 text-xs font-semibold text-black rounded-full bg-cyan-400">Laravel</span>
+              <span class="px-3 py-1 text-xs font-semibold text-black rounded-full bg-cyan-400">SQLite</span>
+            </div>
+            <div class="flex items-center space-x-6 pt-1">
+              <a href="https://github.com/dsk851/larave_x_react.git" class="text-gray-900 hover:text-gray-600 transition-colors group/link">
+                <span
+                  class="text-xs font-medium hover:bg-black hover:text-white p-1 px-2 rounded-xl transition-all">Détails</span>
+                <i class="fas fa-arrow-right ml-1 text-[10px] group-hover/link:translate-x-1 transition-transform"></i>
+              </a>
+              <a href="#" class="text-gray-500 hover:text-gray-700 transition-colors">
+                <i class="fab fa-github text-base"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projet 4 -->
+        <div
+        class="group bg-white border border-gray-100 hover:border-gray-200 rounded-xl overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+        <img src="images/ecom_art.png" alt="Plateforme de commerce artisanal en ligne" class="w-full h-40 object-cover">
+        <div class="p-6 space-y-4">
+          <div>
+            <h3 class="text-lg font-bold text-gray-900 group-hover:text-gray-700 transition-colors">
+              Plateforme de commerce artisanal
+            </h3>
+            <p class="text-sm text-gray-600 leading-relaxed">
+              Application de commerce en ligne dediee aux artisans.
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 text-xs font-semibold text-black rounded-full bg-cyan-400">React</span>
+            <span class="px-3 py-1 text-xs font-semibold text-black rounded-full bg-cyan-400">Laravel</span>
+            <span class="px-3 py-1 text-xs font-semibold text-black rounded-full bg-cyan-400">SQLite</span>
+          </div>
+          <div class="flex items-center space-x-6 pt-1">
+            <a href="https://github.com/dsk851/Ecom_artMaroc.git" class="text-gray-900 hover:text-gray-600 transition-colors group/link">
+              <span
+                class="text-xs font-medium hover:bg-black hover:text-white p-1 px-2 rounded-xl transition-all">Détails</span>
+              <i class="fas fa-arrow-right ml-1 text-[10px] group-hover/link:translate-x-1 transition-transform"></i>
+            </a>
+            <a href="#" class="text-gray-500 hover:text-gray-700 transition-colors">
+              <i class="fab fa-github text-base"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="group bg-white border border-gray-100 hover:border-gray-200 rounded-xl overflow-hidden transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+        <img src="images/text_to_speech.png" alt="Application Web Text-to-Speech" class="w-full h-40 object-cover">
+        <div class="p-6 space-y-4">
+          <div>
+            <h3 class="text-lg font-bold text-gray-900 group-hover:text-gray-700 transition-colors">
+              Application Web Text-to-Speech
+            </h3>
+            <p class="text-sm text-gray-600 leading-relaxed">
+              Application utilisant l'API Web Speech du navigateur, SpeechSynthesis, pour convertir du texte en audio.
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 text-xs font-semibold text-black rounded-full bg-cyan-400">Html</span>
+            <span class="px-3 py-1 text-xs font-semibold text-black rounded-full bg-cyan-400">Css</span>
+            <span class="px-3 py-1 text-xs font-semibold text-black rounded-full bg-cyan-400">JavaScript</span>
+          </div>
+          <div class="flex items-center space-x-6 pt-1">
+            <a href="https://github.com/dsk851/text_to_speech_js.git" class="text-gray-900 hover:text-gray-600 transition-colors group/link">
+              <span
+                class="text-xs font-medium hover:bg-black hover:text-white p-1 px-2 rounded-xl transition-all">Détails</span>
+              <i class="fas fa-arrow-right ml-1 text-[10px] group-hover/link:translate-x-1 transition-transform"></i>
+            </a>
+            <a href="#" class="text-gray-500 hover:text-gray-700 transition-colors">
+              <i class="fab fa-github text-base"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+  
+      </div>
+  
+      <!-- Bouton Voir tous les projets -->
+      <div class="text-center mt-16">
+        <a href="https://github.com/dsk851" target="_blank"
+          class="inline-flex items-center px-6 py-3 bg-gray-900 hover:bg-gray-800 text-white text-sm font-medium rounded-lg transition-colors duration-300 group">
+          <span>Voir tous mes projets</span>
+          <i class="fas fa-arrow-right ml-2 text-xs group-hover:translate-x-1 transition-transform"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-slate-900">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-16">
+        Contactez-moi
+      </h2>
+  
+
+      <!-- <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div class="bg-white p-8 rounded-lg shadow-lg">
+          <h3 class="text-2xl font-bold text-slate-800 mb-6">Envoyez un message</h3>
+          <form>
+            <div class="mb-6">
+              <label for="name" class="block text-slate-700 font-medium mb-2">Nom</label>
+              <input type="text" id="name"
+                class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500">
+            </div>
+            <div class="mb-6">
+              <label for="email" class="block text-slate-700 font-medium mb-2">Email</label>
+              <input type="email" id="email"
+                class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500">
+            </div>
+            <div class="mb-6">
+              <label for="message" class="block text-slate-700 font-medium mb-2">Message</label>
+              <textarea id="message" rows="5"
+                class="w-full px-4 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500"></textarea>
+            </div>
+            <button type="submit"
+              class="w-full bg-cyan-600 hover:bg-cyan-700 text-white font-semibold px-6 py-3 rounded-lg transition-colors duration-300">
+              Envoyer
+            </button>
+          </form> -->
+        <!-- </div> -->
+
+        <!-- Coordonnées -->
+        <div class="text-white flex flex-col items-center">
+          <h3 class="text-2xl font-bold mb-6">Coordonnées</h3>
+          <div class="space-y-6">
+            <div class="flex items-start">
+              <i class="fas fa-map-marker-alt text-cyan-400 text-xl mr-4 mt-1"></i>
+              <div>
+                <h4 class="font-semibold">Adresse</h4>
+                <p class="text-slate-300">AV Karama Rue Somalie N 90 Zohour Fes - Maroc</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <i class="fas fa-envelope text-cyan-400 text-xl mr-4 mt-1"></i>
+              <div>
+                <h4 class="font-semibold">Email</h4>
+                <p class="text-slate-300"><a href="mailto:espoirquindah@gmail.com">espoirquindah@gmail.com</a></p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <i class="fas fa-phone-alt text-cyan-400 text-xl mr-4 mt-1"></i>
+              <div>
+                <h4 class="font-semibold">Téléphone</h4>
+                <p class="text-slate-300">+212 7 65 98 24 04</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-12">
+            <h4 class="font-semibold">Réseaux sociaux</h4>
+            <div class="bg-white p-[2px] w-[65px] mb-4"></div>
+            <div class="flex space-x-4 justify-between">
+              <a href="#" class="text-slate-300 hover:text-cyan-400 transition-colors duration-300">
+                <i class="fab fa-linkedin-in text-2xl"></i>
+              </a>
+              <a href="https://github.com/dsk851/" class="text-slate-300 hover:text-cyan-400 transition-colors duration-300">
+                <i class="fab fa-github text-2xl"></i>
+              </a>
+              <!-- <a href="#" class="text-slate-300 hover:text-cyan-400 transition-colors duration-300">
+                <i class="fab fa-twitter text-2xl"></i>
+              </a>
+              <a href="#" class="text-slate-300 hover:text-cyan-400 transition-colors duration-300">
+                <i class="fab fa-instagram text-2xl"></i> -->
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-800 py-8">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <p class="text-slate-300">
+        &copy; 2025 QUINDAH Espoir Deserema. Tous droits réservés.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Mobile menu toggle
+    document.getElementById('mobile-menu-button').addEventListener('click', function () {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+    });
+
+    // Smooth scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    const target = document.getElementById('mon-element');
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            target.classList.remove('opacity-0', 'translate-x-[-100px]');
+            target.classList.add('opacity-100', 'translate-x-0');
+            // Une fois visible, on peut arrêter d'observer
+            observer.unobserve(target);
+          }
+        });
+      });
+
+      observer.observe(target);
+  </script>
+</body>
+
+</html>
